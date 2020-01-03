@@ -13,10 +13,10 @@ class Team {
 
     fun incrementStat(stat :Stat) {
         when(stat) {
-            Stat.SHOTS -> shots++
             Stat.GOALS -> goals++
             Stat.MISSED -> missed++
             Stat.BLOCKED -> blocked++
         }
+        shots++
     }
 }

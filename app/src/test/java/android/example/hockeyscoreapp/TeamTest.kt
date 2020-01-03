@@ -10,16 +10,14 @@ class TeamTest {
     private val team: Team = Team()
 
     @Test
-    fun `should increment shots to 1`() {
-        team.incrementStat(Team.Stat.SHOTS)
-        assertEquals(1,team.shots)
-    }
+    fun `should increment goals, missed, and blocked to 1, and shots to 3`() {
+        team.incrementStat(Team.Stat.GOALS)
+        team.incrementStat(Team.Stat.MISSED)
+        team.incrementStat(Team.Stat.BLOCKED)
+        assertEquals(1,team.goals)
+        assertEquals(1,team.missed)
+        assertEquals(1,team.blocked)
+        assertEquals(3,team.shots)
 
-    @Test
-    fun `should increment shots to 2`() {
-        println(team.shots)
-        team.incrementStat(Team.Stat.SHOTS)
-        team.incrementStat(Team.Stat.SHOTS)
-        assertEquals(2,team.shots)
     }
 }
