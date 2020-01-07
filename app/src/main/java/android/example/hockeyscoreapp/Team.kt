@@ -8,7 +8,7 @@ class Team {
     var blocked = 0
 
     enum class Stat {
-        SHOTS, GOALS, MISSED, BLOCKED
+        GOALS, MISSED, BLOCKED
     }
 
     fun incrementStat(stat :Stat) {

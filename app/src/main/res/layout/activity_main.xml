@@ -66,8 +66,9 @@
 
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:gravity="center"
-                      android:text="@string/team_2_score"/>
+                      android:layout_gravity="center"
+                      android:text="@string/team_2_score"
+                      android:id="@+id/team_2_score"/>
 
             <Button
                     android:layout_width="wrap_content"
